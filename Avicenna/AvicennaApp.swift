@@ -25,7 +25,7 @@ struct AvicennaApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ProductView()
         }
         .modelContainer(sharedModelContainer)
     }

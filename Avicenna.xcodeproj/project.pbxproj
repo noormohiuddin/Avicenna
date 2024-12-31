@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7C2BDB772D0DE58D00973472 /* Transformers in Frameworks */ = {isa = PBXBuildFile; productRef = 7C2BDB762D0DE58D00973472 /* Transformers */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		7CEF00EC2D010F9A009E0BE4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		7CEF00F52D010F9A009E0BE4 /* AvicennaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvicennaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7CCB87612D20D55200AD8A75 /* Exceptions for "Avicenna" folder in "Avicenna" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7CEF00D72D010F99009E0BE4 /* Avicenna */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7CEF00DA2D010F99009E0BE4 /* Avicenna */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7CCB87612D20D55200AD8A75 /* Exceptions for "Avicenna" folder in "Avicenna" target */,
+			);
 			path = Avicenna;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C2BDB772D0DE58D00973472 /* Transformers in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +90,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C2BDB752D0DE56200973472 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7CEF00CF2D010F99009E0BE4 = {
 			isa = PBXGroup;
 			children = (
 				7CEF00DA2D010F99009E0BE4 /* Avicenna */,
 				7CEF00EE2D010F9A009E0BE4 /* AvicennaTests */,
 				7CEF00F82D010F9A009E0BE4 /* AvicennaUITests */,
+				7C2BDB752D0DE56200973472 /* Frameworks */,
 				7CEF00D92D010F99009E0BE4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +138,7 @@
 			);
 			name = Avicenna;
 			packageProductDependencies = (
+				7C2BDB762D0DE58D00973472 /* Transformers */,
 			);
 			productName = Avicenna;
 			productReference = 7CEF00D82D010F99009E0BE4 /* Avicenna.app */;
@@ -195,6 +222,9 @@
 			);
 			mainGroup = 7CEF00CF2D010F99009E0BE4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7C2BDB742D0DE44500973472 /* XCRemoteSwiftPackageReference "swift-transformers" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7CEF00D92D010F99009E0BE4 /* Products */;
 			projectDirPath = "";
@@ -394,6 +424,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Avicenna/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Avicenna/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -431,6 +462,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Avicenna/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Avicenna/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -583,6 +615,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7C2BDB742D0DE44500973472 /* XCRemoteSwiftPackageReference "swift-transformers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huggingface/swift-transformers";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.14;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7C2BDB762D0DE58D00973472 /* Transformers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C2BDB742D0DE44500973472 /* XCRemoteSwiftPackageReference "swift-transformers" */;
+			productName = Transformers;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7CEF00D02D010F99009E0BE4 /* Project object */;
 }
